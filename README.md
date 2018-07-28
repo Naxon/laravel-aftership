@@ -27,6 +27,30 @@ And finally, add your AfterShip API Key to your `.env` file:
 AFTERSHIP_API_KEY=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
+## Usage
+
+The four classes provided by the sdk are available as facades:
+
+```php
+<?php
+
+use Naxon\AfterShip\Facades\Couriers;
+use Naxon\AfterShip\Facades\LastCheckPoint;
+use Naxon\AfterShip\Facades\Notifications;
+use Naxon\AfterShip\Facades\Trackings;
+
+$allTrackings = Trackings::all();
+$allCouriers = Couriers::all();
+$lastCheckPoint = LastCheckPoint::getById('123123');
+$notification = Notifications::getById('123123');
+```
+
+For further usage information please read the documentation below.
+
+## Documentation
+
+Available in the [official sdk repository](https://github.com/AfterShip/aftership-sdk-php#couriers) and the [official documentation](https://docs.aftership.com/api/4/overview)
+
 ## Testing
 
 Coming soon...
