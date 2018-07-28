@@ -1,0 +1,40 @@
+{
+    "name": "naxon/laravel-aftership",
+    "description": "An AfterShip API wrapper for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/Naxon/laravel-aftership",
+    "support": {
+        "issues": "https://github.com/Naxon/laravel-aftership/issues",
+        "source": "https://github.com/Naxon/laravel-aftership"
+    },
+    "authors": [
+        {
+            "name": "Daniel Naxon",
+            "email": "naxond@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "5.6.*",
+        "aftership/aftership-php-sdk": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Naxon\\AfterShip\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Naxon\\AfterShip\\AfterShipServiceProvider"
+            ],
+            "aliases": {
+                "Couriers": "Naxon\\AfterShip\\Facades\\Couriers",
+                "Trackings": "Naxon\\AfterShip\\Facades\\Trackings",
+                "LastCheckPoint": "Naxon\\AfterShip\\Facades\\LastCheckPoint",
+                "Notifications": "Naxon\\AfterShip\\Facades\\Notifications"
+            }
+        }
+    }
+}
