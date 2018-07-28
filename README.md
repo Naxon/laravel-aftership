@@ -2,7 +2,7 @@
 
 
 [![GitHub release](https://img.shields.io/github/release/naxon/laravel-aftership.svg)](https://github.com/Naxon/laravel-aftership)
-[![StyleCI](https://github.styleci.io/repos/134062048/shield?branch=master)](https://github.styleci.io/repos/134062048)
+[![StyleCI](https://github.styleci.io/repos/142675159/shield?branch=master)](https://github.styleci.io/repos/142675159)
 [![Github All Releases](https://img.shields.io/github/downloads/naxon/laravel-aftership/total.svg)](https://github.com/Naxon/laravel-aftership)
 
 This package provides an AfterShip PHP SDK wrapper for Laravel.
