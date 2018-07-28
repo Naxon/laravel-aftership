@@ -5,8 +5,7 @@ namespace Naxon\AfterShip\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Notifications
- * @package Naxon\AfterShip\Facades
+ * Class Notifications.
  *
  * @method static array create($slug, $trackingNumber, array $params = array())
  * @method static array createById($trackingId, array $params = array())

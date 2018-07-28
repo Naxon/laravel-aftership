@@ -3,9 +3,9 @@
 namespace Naxon\AfterShip;
 
 use AfterShip\Couriers;
-use AfterShip\LastCheckPoint;
-use AfterShip\Notifications;
 use AfterShip\Trackings;
+use AfterShip\Notifications;
+use AfterShip\LastCheckPoint;
 use Illuminate\Support\ServiceProvider;
 
 class AfterShipServiceProvider extends ServiceProvider
@@ -38,19 +38,19 @@ class AfterShipServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/aftership.php', 'aftership');
 
-        $this->app->singleton('aftership.couriers', function($app) {
+        $this->app->singleton('aftership.couriers', function ($app) {
             return new Couriers($app['config']['aftership.api_key']);
         });
 
-        $this->app->singleton('aftership.trackings', function($app) {
+        $this->app->singleton('aftership.trackings', function ($app) {
             return new Trackings($app['config']['aftership.api_key']);
         });
 
-        $this->app->singleton('aftership.lastCheckPoint', function($app) {
+        $this->app->singleton('aftership.lastCheckPoint', function ($app) {
             return new LastCheckPoint($app['config']['aftership.api_key']);
         });
 
-        $this->app->singleton('aftership.notifications', function($app) {
+        $this->app->singleton('aftership.notifications', function ($app) {
             return new Notifications($app['config']['aftership.api_key']);
         });
     }

@@ -5,8 +5,7 @@ namespace Naxon\AfterShip\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class LastCheckPoint
- * @package Naxon\AfterShip\Facades
+ * Class LastCheckPoint.
  *
  * @method static array get($slug, $trackingNumber, array $params = array())
  * @method static array getById($trackingId, array $parrams = array())

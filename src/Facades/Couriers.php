@@ -5,8 +5,7 @@ namespace Naxon\AfterShip\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Couriers
- * @package Naxon\AfterShip\Facades
+ * Class Couriers.
  *
  * @method static array get()
  * @method static array all()
