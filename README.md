@@ -1,4 +1,4 @@
-# Laravel Errors
+# Laravel AfterShip
 
 
 [![GitHub release](https://img.shields.io/github/release/naxon/laravel-aftership.svg)](https://github.com/Naxon/laravel-aftership)
