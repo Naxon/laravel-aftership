@@ -5,8 +5,7 @@ namespace Naxon\AfterShip\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Trackings
- * @package Naxon\AfterShip\Facades
+ * Class Trackings.
  *
  * @method static array create($trackingNumber, array $params = array())
  * @method static array delete($slug, $trackingNumber)
